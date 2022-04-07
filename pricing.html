@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" type="text/css" href="custom.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+        body,
+        h1 {
+            font-family: "Roboto", sans-serif
+        }
+
+        body,
+        html {
+            height: 100vh;
+        }
+
+        .bgcolor {
+            background: #512d6d;
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+            animation-name: colormv;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes colormv {
+            from {
+                background-color: #512d6d;
+            }
+
+            to {
+                background-color: #aea29f;
+            }
+        }
+
+        .logo {
+            width: 100%;
+        }
+        .csection {
+			height:80vh;
+			margin-top:70px;
+		}
+    </style>
+</head>
+<div class="bgcolor w3-container w3-animate-opacity w3-text-white">
+       <!--Navigation-->
+     <!-- Side Navbar -->
+        <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none; z-index:100;"
+            id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-xxlarge w3-center">Close &times;</button>
+            <a href="/cv" onclick="w3_close()" class="w3-bar-item w3-button w3-xxlarge w3-center">about</a>
+            <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-xxlarge w3-center">services</a>
+            <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-xxlarge w3-center">pricing</a>
+            <a href="/portfolio" class="w3-bar-item w3-button w3-xxlarge w3-center">work</a>
+            <a href="#contact" onclick="w3-close()" class="w3-bar-item w3-button w3-xxlarge w3-center">contact</a>
+        </div>
+        <div class="w3-top">
+
+            <button class="w3-button w3-black w3-large" style="box-shadow: 10px 1px 10px grey;"
+                onclick="w3_open()">menu</button>
+        </div>
+          
+       <!--End Navigation-->
+    <!-- Pricing Tables -->
+    <div class="csection w3-row-padding">
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">1GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-teal w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">Unlimited Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+  <script>
+        //side navbar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+    <script>
+        < script src = "/static/js/scroll-down.js" >
+    </script>
+  </body>
+  </html>

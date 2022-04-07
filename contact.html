@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" type="text/css" href="custom.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+        body,
+        h1 {
+            font-family: "Roboto", sans-serif
+        }
+
+        body,
+        html {
+            height: 100%
+        }
+
+        .bgcolor {
+            background: #512d6d;
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+            animation-name: colormv;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes colormv {
+            from {
+                background-color: #512d6d;
+            }
+
+            to {
+                background-color: #aea29f;
+            }
+        }
+
+        .logo {
+            width: 100%;
+        }
+        .csection {
+			height:80vh;
+			margin-top:70px;
+		}
+    </style>
+</head>
+<div class="bgcolor w3-container w3-animate-opacity w3-text-white">
+       <!--Navigation-->
+     <!-- Side Navbar -->
+        <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none; z-index:100;"
+            id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-xxlarge w3-center">Close &times;</button>
+            <a href="/cv" onclick="w3_close()" class="w3-bar-item w3-button w3-xxlarge w3-center">about</a>
+            <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-xxlarge w3-center">services</a>
+            <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-xxlarge w3-center">pricing</a>
+            <a href="/portfolio" class="w3-bar-item w3-button w3-xxlarge w3-center">work</a>
+            <a href="#contact" onclick="w3-close()" class="w3-bar-item w3-button w3-xxlarge w3-center">contact</a>
+        </div>
+        <div class="w3-top">
+
+            <button class="w3-button w3-black w3-large" style="box-shadow: 10px 1px 10px grey;"
+                onclick="w3_open()">menu</button>
+        </div>
+       <!--End Navigation-->
+
+
+  
+  <!-- Contact Section -->s
+  <div class="csection w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>email@email.com</p>
+      </div>
+      <div class="w3-third w3-black">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Chicago, US</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>512312311</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+  
+  
+  </div>
+  <script>
+        //side navbar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+    <script>
+        < script src = "/static/js/scroll-down.js" >
+    </script>
+  </body>
+  </html>
