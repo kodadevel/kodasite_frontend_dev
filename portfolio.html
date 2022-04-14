@@ -19,6 +19,26 @@
         html {
             height: 100%;
         }
+        .bgcolor {
+            background: #512d6d;
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+            animation-name: colormv;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes colormv {
+            from {
+				background-color:#000;
+			}
+			to {
+				background-color:#512d6d;
+			}
+        }
     </style>
 </head>
 
@@ -47,7 +67,7 @@
         
     </div>
 
-    <div class="w3-row-padding w3-theme">
+    <div class="bgcolor w3-row-padding w3-theme">
 
         <div class="w3-third w3-section">
             <div class="w3-card-4">

@@ -26,7 +26,7 @@
             background-position: center;
             background-size: cover;
             animation-name: colormv;
-            animation-duration: 5s;
+            animation-duration: 3s;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
             animation-direction: alternate;
@@ -34,12 +34,11 @@
 
         @keyframes colormv {
             from {
-                background-color: #512d6d;
-            }
-
-            to {
-                background-color: #aea29f;
-            }
+				background-color:#000;
+			}
+			to {
+				background-color:#512d6d;
+			}
         }
 
         .logo {
@@ -52,8 +51,7 @@
     <div class="bgcolor w3-display-container w3-animate-opacity w3-text-white">
        <!--Navigation-->
      <!-- Side Navbar -->
-        <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none; z-index:100;"
-            id="mySidebar">
+        <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none; z-index:100;"id="mySidebar">
             <button onclick="w3_close()" class="w3-bar-item w3-xxlarge w3-center">Close &times;</button>
             <a href="/cv" onclick="w3_close()" class="w3-bar-item w3-button w3-xxlarge w3-center">about</a>
             <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-xxlarge w3-center">services</a>
@@ -72,6 +70,7 @@
             <!--<img src="images/kodalogo.svg" alt="Koda Dev" class="w3-image animate-top logo">-->
             <object data="images/kodalogo.svg" class="logo"> </object>
         </div>
+        <div class="w3-display-bottommiddle"><h3 class="w3-opacity w3-center">Full Stack Web Development |  3D Visuals and Modeling</h3></div>
     </div>
 
 <script>

@@ -7,7 +7,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 <style>
+
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <style>
         body,
@@ -34,11 +37,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
         @keyframes colormv {
             from {
-                background-color: #512d6d;
+                background-color:#000;
             }
 
             to {
-                background-color: #aea29f;
+                background-color: #512d6d;
             }
         }
 
@@ -51,6 +54,24 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
 </head>
 <body class="w3-light-grey">
+<!--Navigation-->
+     <!-- Side Navbar -->
+        <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none; z-index:100;"
+            id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-xxlarge w3-center">Close &times;</button>
+            <a href="/cv" onclick="w3_close()" class="w3-bar-item w3-button w3-xxlarge w3-center">about</a>
+            <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-xxlarge w3-center">services</a>
+            <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-xxlarge w3-center">pricing</a>
+            <a href="/portfolio" class="w3-bar-item w3-button w3-xxlarge w3-center">work</a>
+            <a href="#contact" onclick="w3-close()" class="w3-bar-item w3-button w3-xxlarge w3-center">contact</a>
+        </div>
+        <div class="w3-top">
+
+            <button class="w3-button w3-black w3-large" style="box-shadow: 10px 1px 10px grey;"
+                onclick="w3_open()">menu</button>
+        </div>
+       <!--End Navigation-->
+
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -90,35 +111,35 @@ A large tool in my arsenal are free (libre) and open-source software for graphic
     <!-- Right Column -->
     <div class="w3-twothird">
     
-      <div class="w3-container w3-card cvbg w3-margin-bottom w3-text-white">
+      <div class="bgcolor w3-container w3-card cvbg w3-margin-bottom w3-text-white">
         <div class="w3-container">
 <h2 class="w3-opacity"><b>OUR SERVICES</b></h2>
 <h6><strong>WEB DEVELOPMENT</strong></h6>
 <p><strong>Web & Interaction Design</strong><br>
 Our web design and development expertise offers underdog brands the digital experiences and creative content to go head-to-head against their largest competitors online.
 </p>
-<p><strong>Product Showcase Microsites</strong> <br>Rich, stand-alone web experiences that can escape the creative constraints of existing platforms.</p>
+<p><strong>Product Showcase Microsites</strong> <br>Rich, stand-alone web experiences that can escape the creative constraints of existing platforms.
+<br><button class="w3-button w3-white w3-padding-small">example</button></p>
 
-<p><strong>Product Catalog Websites</strong><br>Modern online catalogs with sophisticated and intuitive search functionality.</p> 
+<p><strong>Product Catalog Websites</strong><br>Modern online catalogs with sophisticated and intuitive search functionality.<br><button class="w3-button w3-white w3-padding-small">example</button></p> 
 
-E-Commerce Websites. Compelling shopping experiences built atop platforms such as Django.
+<p><strong>E-Commerce Websites.</strong><br> Compelling shopping experiences built atop platforms such as Django or Wordpress.<br><button class="w3-button w3-white w3-padding-small">example</button></p>
 
-Startup Microsites. Concentrated creativity and messaging delivering high-impact for budget constrained small-businesses.
+<p><strong>Startup Microsites. </strong><br>Concentrated creativity and messaging delivering high-impact for budget constrained small-businesses.</p>
 
-CMS-Powered Websites. Easy to edit and update sites built atop content management systems.
+<p><strong>CMS-Powered Websites.</strong><br> Easy to edit and update sites built for company intranets, online platforms, private social media platforms.</p>
  
+<p><strong>Mobile Apps.</strong><br> Informational, promotional, and other iOS and Android apps, especially for marketing applications.</p>
 
-Mobile Apps. Informational, promotional, and other iOS and Android apps, especially for marketing applications.
+<p><strong>Web-Animations.</strong><br>Create engaging, smooth animations for any screen size.   
+</p>
+<p><strong>Web-Interactive 3D.</strong> Product and environment showcases powered by the 3D rendering capability and the web using WebGL and Javascript.</p>
 
-Web-Animations.  Create engaging, smooth animations for any screen size.   
+<p><strong>DevOps</strong>Setup Linux Cloud Servers to serve the web site or application.</p>
+<p><strong></strong>Setup Linux Cloud Servers to serve the web site or application.</p>
 
-Web-Interactive 3D. Product and environment showcases powered by the 3D rendering capability and the web using WebGL and Javascript.
-
-Setup Linux Cloud Servers to serve the web site or application.
-
-Database setup and transfers.
-
-Edit, update existing sites.</p>
+<p><strong>Web and App Maintinance.</strong> Database setup and transfers.
+Edit, update existing websites.</p>
 <hr>
 <h6>3D</h6>
 3D Capabilities
@@ -160,6 +181,20 @@ Architectural Visualization. Stylized and photorealistic exteriors, interiors, w
   <i class="fa fa-linkedin w3-hover-opacity"></i>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
+
+<script>
+        //side navbar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+    <script>
+        < script src = "/static/js/scroll-down.js" >
+    </script>
 
 </body>
 </html>
